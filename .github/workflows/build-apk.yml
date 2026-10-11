@@ -40,7 +40,7 @@ jobs:
           sdkmanager "platforms;android-35" "build-tools;35.0.0"
 
       - name: Extract project ZIP
-        run: unzip -q VocabularyFlipbook_AndroidStudio_Project.zip -d source
+        run:  unzip -q VocabularyFlipbook_AndroidStudio_Project_FIXED.zip -d source
 
       - name: Build APK
         run: gradle -p source/VocabularyFlipbookApp assembleDebug --no-daemon
